@@ -4,7 +4,6 @@
 <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
 <style>
 h1 {
-<div style="margin-right:25%">
 font-family: 'Parisienne', cursive;
 font-size:350%;
 text-align:center;
@@ -34,7 +33,18 @@ text-shadow:2px 2px #ffdead;
 }
 </style>
 <h2>Short Biography</h2>
-
+<button onclick="myFunction()">Click Me</button>
+<script>
+function myFunction() {
+var txt;
+if (confirm("Press a button!") == true) {
+txt = "You pressed OK!";
+} else {
+txt = "You pressed Cancel!";
+}
+document.getElementById("demo").innerHTML = txt;
+}
+</script>
 <style>
 p {
 font-family:verdana;
