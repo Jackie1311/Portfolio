@@ -1,61 +1,32 @@
 <!DOCTYPE html>
 <html>
-<title>Jackie's Portfolio Website</title>
-<head>
-<link href="https://fonts.googleapis.com/css?family=Catamaran:600" rel="stylesheet">
-<style>
-body {margin:0;}
-.topnav {
-overflow: hidden;
-}
-.topnav a {
-float: left;
-display: block;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 17px;
-font-family: 'Catamaran', sans-serif;
-}
-.topnav a:hover {
-background-color: #800060;
-}
-.topnav a.active {
-font-family: 'Catamaran', sans-serif;
-color: white;
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-</style>
-</head>	
-<body>
-<link href="http://natbg.com/wp-content/uploads/2017/01/beaches-moorea-french-polynesia-white-pink-afternoon-day-amazing-natural-orange-awesome-night-islands-sunrise-land-oceans-sky-water-woods-forests-cool-black-dual-monitor-background.jpg">
-<style>
-body{
-    background-image:url("http://natbg.com/wp-content/uploads/2017/01/beaches-moorea-french-polynesia-white-pink-afternoon-day-amazing-natural-orange-awesome-night-islands-sunrise-land-oceans-sky-water-woods-forests-cool-black-dual-monitor-background.jpg);
-    background-attachment:fixed;
-    color:white;
-    font-family: 'Parisienne', cursive;
-    font-size:350%;
-	text-align:center;
-    text-shadow: 3px 3px black;
-}
-</style>
-<h1>Jackie Ortiz</h1>
-</body>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
 </html>
-    
-
-
-  
-
 
