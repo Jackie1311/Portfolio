@@ -68,6 +68,106 @@ width: 350px;
 </div>
 </div>
 </section>
+<body>
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+    
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}                                                
+</style>                                                 
+</body>
+<body>
+  <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://i1.ytimg.com/vi/TMlqsb9IUqs/mqdefault.jpg">
+      <img src="http://i1.ytimg.com/vi/TMlqsb9IUqs/mqdefault.jpg" alt="Tarimoro Michoacan" width="300" height="200">
+    </a>
+    <div class="desc">My family and I are from a small rancho in Mexico called Tarimoro. It is a place where everyone seems like family, the freedom to run around is unbelievable, the parties are untouchable, and the food is always homemade.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.creativeeventsasia.com/wp-content/uploads/2012/11/Image02.jpg">
+      <img src="http://www.creativeeventsasia.com/wp-content/uploads/2012/11/Image02.jpg" alt="Beach" width="600" height="400">
+    </a>
+    <div class="desc">I love feeling the sun beat down on my face, the sand between my toes, the wind brushing through my hair, and the water gliding around me.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://truenation.org/tnwomen/wp-content/uploads/2015/08/CAMP-hike.jpg">
+      <img src="http://truenation.org/tnwomen/wp-content/uploads/2015/08/CAMP-hike.jpg" alt="Hike" width="600" height="400">
+    </a>
+    <div class="desc">One of my favorite activities to do in my free time is to go hiking.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg">
+      <img src="https://images.trvl-media.com/media/content/expus/graphics/launch/home/tvly/150324_flights-hero-image_1330x742.jpg" alt="Travel" width="600" height="400">
+    </a>
+    <div class="desc">One day I want to travel the world and go on endless adventures having the feeling of teetering through the places unknown to me.</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+</div>
+
+</body>           
 </body>
 </body>
 </html>
